@@ -1,0 +1,15 @@
+.header {
+    height: 80px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15px;
+}
+
+.list {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

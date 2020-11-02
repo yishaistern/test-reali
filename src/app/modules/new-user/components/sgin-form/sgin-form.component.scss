@@ -1,0 +1,47 @@
+.main {
+    width: 300px;
+    max-width: 80vw;
+}
+.err {
+    color: red;
+    font-size: 10px;
+    padding: 0px 0 8px 0;
+    margin-top: -7px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+    height: 50px;
+    padding: 15px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.icon {
+    background-image: url('../../../../../assets/user.png');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body {
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.input {
+    width: 100%;
+}
+.full-width {
+    width: 100%;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

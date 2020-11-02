@@ -1,0 +1,34 @@
+<div class="main">
+    <div class="header">
+        <div class="icon"></div>
+        <div class="title">Welcom</div>
+    </div>
+    <div class="body">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <mat-form-field class="full-width">
+                <mat-label>first name</mat-label>
+                <input class="input" matInput formControlName="firstName" placeholder="first name" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>last name</mat-label>
+                <input class="input" matInput formControlName="lastName" placeholder="last name" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>phone</mat-label>
+                <input class="input" matInput formControlName="phone" placeholder="phone" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>address</mat-label>
+                <input class="input" matInput formControlName="address" placeholder="address" required>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>age</mat-label>
+                <input class="input" matInput formControlName="age" placeholder="age" required>
+            </mat-form-field>
+            <div *ngIf="isAlready" class="err">User Already exsits</div>
+            <div class="btn-wrap">
+                <button type="submit"  mat-raised-button color="primary">{{(name) ? 'Edit User' : 'Add user'}}</button>
+            </div>
+        </form>
+    </div>
+</div>
